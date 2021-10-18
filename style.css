@@ -26,6 +26,9 @@
   grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
   gap: 1rem;
 }
+.flex {
+  display: flex;
+}
 .inline {
   display: inline;
 }
@@ -38,8 +41,4 @@
 .navbar {
   list-style-type: none;
   display: flex;
-}
-
-ul {
-  list-style-type: none;
 }

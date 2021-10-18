@@ -24,7 +24,7 @@
       </nav>
     </header>
     <main>
-      <h1 class="center">Our Agency</h1>
+      <h1 class="center" name="ouragency" tabindex="0">Our Agency</h1>
       <section class="center">
         <h2 id="about-agency">What we do</h2>
         <p>
@@ -38,27 +38,57 @@
         </p>
       </section>
       <section class="center gap-md">
-        <!-- We could make this into a carousel if there is time? - so you can flick between our profile -->
-        <h2 id="the-team">Meet the Team</h2>
-        <div class="grid">
-          <h3>Adam</h3>
+        <!-- We could make this into tabs if there is time? - so you can flick between our profile -->
+        <h2 id="the-team" tabindex="0">Meet the Team</h2>
+        <button class="tabLink center" onclick="changeUser">Adam</button>
+        <button class="tabLink center" onclick="changeUser">Juliette</button>
+
+        <div class="flex justify-space-evenly tabcontent" id="adam">
+          <h3 tabindex="0">Adam</h3>
           <p>
-            Bio will go here... Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Minima quae nostrum, perferendis placeat nam, iure
-            earum ad soluta nesciunt unde architecto quo, animi hic perspiciatis
-            praesentium ducimus mollitia cum non!
-          </p>
-          <h3>Juliette</h3>
+            I like to develop websites that are easy to navigate and access for
+            users.
+            <br>
+           <strong>SKILLS</strong>
+            My skills include:
+            <ul>
+              <li>
+                HTML
+              </li>
+              <li>
+                CSS
+              </li>
+              <li>
+                Javascript
+              </li>
+            </ul>
+                      </p>
+        </div>
+        <div class="flex justify-space-evenly tabcontent" id="juliette">
+          <h3 tabindex="0">Juliette</h3>
           <p>
-            Bio will go here... Lorem ipsum, dolor sit amet consectetur
-            adipisicing elit. Iure blanditiis sint, repudiandae, ut nobis
-            accusamus nisi numquam culpa exercitationem amet tempora. Laboriosam
-            quo laudantium ipsum officia, quam dolore consequuntur quasi.
+            I'm interested in making attractive, accessible designs that are
+            inclusive and can be easily navigated by everyone.
+            <br>
+             <strong>SKILLS</strong>
+            My skills include:
+            <ul>
+              <li>
+                HTML
+              </li>
+              <li>
+                CSS
+              </li>
+              <li>
+                Javascript
+              </li>
+            </ul>
           </p>
+           
         </div>
       </section>
       <section class="center gap-xl">
-        <h2>Get in touch</h2>
+        <h2 tabindex="0">Get in touch</h2>
         <!-- this p will be deleted -->
         <p>Form will go here</p>
       </section>
