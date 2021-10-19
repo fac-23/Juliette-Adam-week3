@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -39,17 +38,62 @@
         perferendis debitis sequi, consequuntur id tenetur!
       </p>
     </section>
-    <section class="center gap-md">
-      <!-- We could make this into a carousel if there is time? - so you can flick between our profile -->
-      <h2 id="the-team">Meet the Team</h2>
-      <div class="grid">
-        <h3>Adam</h3>
-        <p>
-          Bio will go here... Lorem ipsum dolor sit amet consectetur
-          adipisicing elit. Minima quae nostrum, perferendis placeat nam, iure
-          earum ad soluta nesciunt unde architecto quo, animi hic perspiciatis
-          praesentium ducimus mollitia cum non!
-        </p>
+      <section class="center gap-md">
+        <!-- We could make this into tabs if there is time? - so you can flick between our profile -->
+        <h2 id="the-team" tabindex="0">Meet the Team</h2>
+        <button class="tabLink center" onclick="changeUser">Adam</button>
+        <button class="tabLink center" onclick="changeUser">Juliette</button>
+
+        <div class="flex justify-space-evenly tabcontent" id="adam">
+          <h3 tabindex="0">Adam</h3>
+          <p>
+            I like to develop websites that are easy to navigate and access for
+            users.
+            <br>
+           <strong>SKILLS</strong>
+            My skills include:
+            <ul>
+              <li>
+                HTML
+              </li>
+              <li>
+                CSS
+              </li>
+              <li>
+                Javascript
+              </li>
+            </ul>
+                      </p>
+        </div>
+        <div class="flex justify-space-evenly tabcontent" id="juliette">
+          <h3 tabindex="0">Juliette</h3>
+          <p>
+            I'm interested in making attractive, accessible designs that are
+            inclusive and can be easily navigated by everyone.
+            <br>
+             <strong>SKILLS</strong>
+            My skills include:
+            <ul>
+              <li>
+                HTML
+              </li>
+              <li>
+                CSS
+              </li>
+              <li>
+                Javascript
+              </li>
+            </ul>
+          </p>
+           
+        </div>
+      </section>
+      <section class="center gap-xl">
+        <h2 tabindex="0">Get in touch</h2>
+      </section>
+    </main>
+  </body>
+</html>
         <h3>Juliette</h3>
         <p>
           Bio will go here... Lorem ipsum, dolor sit amet consectetur
@@ -61,7 +105,6 @@
     </section>
     <section class="center gap-xl">
       <h2>Get in touch</h2>
-      <!-- this p will be deleted -->
       <form action="">
         <label for="fullname">Full Name:</label>
         <input type="text" id="fullname">
@@ -90,3 +133,4 @@
 </body>
 
 </html>
+
