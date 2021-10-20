@@ -17,7 +17,32 @@ As a potential client, I want to:
 - User stories come with acceptance criteria - a detailed scope of a user’s requirements.
 
 - Navigation menu juliette
-- ‘About us’ section = adam/juliette
+- ‘About us’ section = Juliette
 - Contact form = adam
 - A user cannot submit a form without filling out all of the mandatory fields (name, company name, email address) = adam
 - Information from the form doesn’t get submitted until the user clicks a button = adam
+
+let tabButton = document.querySelector(".tabLink");
+
+document.getElementById("defaultOpen").click();
+
+function changeTeamMember(cityName, elmnt, color) {
+// Hide all elements with class="tabcontent" by default \*/
+var i, tabcontent, tablinks;
+tabcontent = document.getElementsByClassName("tabcontent");
+for (i = 0; i < tabcontent.length; i++) {
+tabcontent[i].style.display = "none";
+}
+
+// Remove the background color of all tablinks/buttons
+tablinks = document.getElementsByClassName("tablink");
+for (i = 0; i < tablinks.length; i++) {
+tablinks[i].style.backgroundColor = "";
+}
+
+// Show the specific tab content
+document.getElementById(cityName).style.display = "block";
+
+// Add the specific color to the button used to open the tab content
+elmnt.style.backgroundColor = color;
+}

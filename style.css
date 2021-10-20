@@ -1,6 +1,9 @@
 * {
   box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 2%;
 }
+
 .auto-child-width {
   width: auto;
 }
@@ -42,13 +45,55 @@
   list-style-type: none;
   display: flex;
 }
-
-ul {
-  list-style-type: none;
+.width-sm {
+  max-width: 20rem;
+}
+.width-med {
+  max-width: 40rem;
 }
 
-label{
-  font-weight:bold;
-
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
 
+label {
+  font-weight: bold;
+}
+body {
+  background: rgb(241, 223, 231);
+  background: radial-gradient(
+    circle,
+    rgba(241, 223, 231, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
+  color: ghostwhite;
+}
+
+/* Tab CSS */
+.tablink {
+  background-color: #555;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 25%;
+}
+
+.tabcontent {
+  color: white;
+  padding: 50px;
+  text-align: center;
+  display: none;
+}
+
+#adam {
+  background-color: #4579b6;
+}
+#juliette {
+  background-color: #c19bec;
+}
