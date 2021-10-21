@@ -5,4 +5,7 @@ So far we have made a:
 - team bio 
 - contact form
 
-We are also planning to improve the UI design. 
+We are also planning to:
+- improve the UI design
+- add JS to the user profiles so they display as tabs
+- add some more detail
