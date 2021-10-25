@@ -39,57 +39,55 @@
         designs that best suit their needs.
       </p>
     </section>
-    <section class="center gap-md width-med">
-      <!-- We could make this into tabs if there is time? - so you can flick between our profile -->
-      <h2 id="the-team" tabindex="0">Meet the Team</h2>
-      <button class="tabLink center" onclick="changeTeamMember">Adam</button>
-      <button class="tabLink center" onclick="changeTeamMember">Juliette</button>
+      <section class="center gap-md width-med">
+        <!-- We could make this into tabs if there is time? - so you can flick between our profile -->
+        <h2 id="the-team">Meet the Team</h2>
+        <div>
+        <div class="tabcontent justify-space-evenly" id="adam">
+          <h3 >Adam</h3>
+          <p class="width-sm">
+            I like to develop websites that are easy to navigate and access for
+            users.
+              <p>SKILLS</p>
+            <ul>
+              <li>
+                HTML
+              </li>
+              <li>
+                CSS
+              </li>
+              <li>
+                Javascript
+              </li>
+            </ul>
+            </p>
+        </div>
+        <div class="tabcontent justify-space-evenly hidden" id="juliette">
+          <h3>Juliette</h3>
+          <p class="width-sm">
+            I'm interested in making attractive, accessible designs that are
+            inclusive and can be easily navigated by everyone.
 
-      <div class="flex justify-space-evenly" id="adam">
-        <h3 tabindex="0">Adam</h3>
-        <p class="width-sm">
-          I like to develop websites that are easy to navigate and access for
-          users.
-
-        <ul>
-          <strong>SKILLS</strong>
-          <br>
-          <li>
-            HTML
-          </li>
-          <li>
-            CSS
-          </li>
-          <li>
-            Javascript
-          </li>
-        </ul>
-        </p>
+            <p>SKILLS</p>
+            <ul>
+              <li>
+                HTML
+              </li>
+              <li>
+                CSS
+              </li>
+              <li>
+                Javascript
+              </li>
+            </ul>
+          </p>
+           
+        </div> 
       </div>
-      <div class="flex justify-space-evenly " id="juliette">
-        <h3 tabindex="0">Juliette</h3>
-        <p class="width-sm">
-          I'm interested in making attractive, accessible designs that are
-          inclusive and can be easily navigated by everyone.
-
-        <ul>
-          <strong>SKILLS</strong>
-          <br>
-          <li>
-            HTML
-          </li>
-          <li>
-            CSS
-          </li>
-          <li>
-            Javascript
-          </li>
-        </ul>
-        </p>
-
-      </div>
-    </section>
-    <section class="center gap-xl width-sm contact-form">
+              <button class="tablink center" id="adam">Adam</button>
+              <button class="tablink center" id="juliette">Juliette</button>
+      </section>
+    <section class="center gap-xl width-sm">
       <h2>Get in touch</h2>
       <form action="" class="center width-sm">
         <label for="fullname" class="gap-lg">Full Name:</label>
