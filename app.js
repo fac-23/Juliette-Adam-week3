@@ -15,35 +15,40 @@ form.addEventListener("submit", e => {
 });
 
 //select tab buttons - test with console log
-const tablinks = document.querySelectorAll(".tablink");
+const tablinks = Array.from(document.querySelectorAll(".tablink"));
+console.log(tablinks);
 tablinks.forEach(tablink => console.log("Class list is " + tablink.classList));
 
 //select the contents of all the tabs
-const userBios = document.querySelectorAll(".tabcontent");
+const userBios = Array.from(document.querySelectorAll(".tabcontent"));
 
 //loop over tab buttons
 //add an event listener for when clicked
-// Hide all elements with class="tabcontent" by default
+//check for "hidden" class and add if not there
+// Hide all elements with class="hidden"
 for (let i = 0; i < tablinks.length; i++) {
-  tablinks[i].addEventListener("click", () => {
-    if (userBios[i].classList.contains("hidden")) {
-      userBios[i].classList.remove("hidden");
-    } else {
-      userBios[i].classList.add("hidden");
-    }
-  });
+  tablinks[i].addEventListener("click", changeTeamMember);
 }
+//   => {
+//     if (userBios[i].classList.contains("hidden")) {
+//       userBios[i].classList.remove("hidden");
+//     } else {
+//       userBios[i].classList.add("hidden");
+//     }
+//   });
+// }
 
-// let curIndex = 0;
-// function changeTeamMember() {
-//   curIndex++;
-//   console.log(curIndex);
-//
-// for (let j = 0; j < tabcontent.length; j++) {
-//   tabcontent[j].style.display = "block";
-// }
-// //Remove the background color of all tablinks/ buttons
-// for (let j = 0; j < tablinks.length; j++) {
-//   tablinks[j].style.backgroundColor = "";
-// }
-// }
+let curIndex = 0;
+function changeTeamMember() {
+  curIndex++;
+  console.log(curIndex);
+  if (curIndex > userBios.length - 1) {
+    curIndex = 0;
+  }
+  //hide all userBios
+  for (let i = 0; i < userBios.length; i++) {
+    userBios[i].classList.add("hidden");
+  }
+  //show Bio with current index
+  userBios[curIndex].classList.remove("hidden");
+}
