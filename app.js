@@ -9,7 +9,7 @@ form.addEventListener("submit", e => {
   let companyNameVal = companyName.value;
   let emailVal = email.value;
   console.log(fullnameVal, companyNameVal, emailVal);
-  if ((fullnameVal === "", companyNameVal === "", emailVal === "")) {
+  if ((fullnameVal === "" || companyNameVal === "" || emailVal === "")) {
     alert("Please fill in required fields");
   }
 });
