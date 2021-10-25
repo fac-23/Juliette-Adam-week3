@@ -36,17 +36,14 @@
       <section class="center gap-md width-med">
         <!-- We could make this into tabs if there is time? - so you can flick between our profile -->
         <h2 id="the-team">Meet the Team</h2>
-        <button class="tabLink center" onclick="changeTeamMember">Adam</button>
-        <button class="tabLink center" onclick="changeTeamMember">Juliette</button>
-
-        <div class="flex justify-space-evenly" id="adam">
+        <div>
+        <div class="tabcontent justify-space-evenly" id="adam">
           <h3 >Adam</h3>
           <p class="width-sm">
             I like to develop websites that are easy to navigate and access for
             users.
               <p>SKILLS</p>
             <ul>
-              <br>
               <li>
                 HTML
               </li>
@@ -59,7 +56,7 @@
             </ul>
             </p>
         </div>
-        <div class="flex justify-space-evenly " id="juliette">
+        <div class="tabcontent justify-space-evenly hidden" id="juliette">
           <h3>Juliette</h3>
           <p class="width-sm">
             I'm interested in making attractive, accessible designs that are
@@ -79,7 +76,10 @@
             </ul>
           </p>
            
-        </div>
+        </div> 
+      </div>
+              <button class="tablink center" id="adam">Adam</button>
+              <button class="tablink center" id="juliette">Juliette</button>
       </section>
     <section class="center gap-xl width-sm">
       <h2>Get in touch</h2>
