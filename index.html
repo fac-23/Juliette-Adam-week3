@@ -14,23 +14,20 @@
 
 <body>
   <header>
-    <nav>
-      <ul class="navbar center justify-space-evenly">
-        <li class="nav">
-          <a href=""> What we offer </a>
-        </li>
-        <li class="nav">
-          <a href="">Meet the team </a>
-        </li>
-        <li class="nav">
-          <a href="">Get in touch </a>
-        </li>
-      </ul>
+    <nav class="navbar">
+      <div class="logo">AGILE</div>
+      <div class="navbar-links">
+        <ul class="">
+          <li class="nav"><a href="#about-agency"> What we offer </a></li>
+          <li class="nav"><a href="#the-team">Meet the team </a></li>
+          <li class="nav"><a href="#contact-form">Get in touch </a></li>
+        </ul>
+      </div>
     </nav>
   </header>
   <main>
-    <h1 class="center">Our Agency</h1>
-    <section class="center">
+    <h1 class="center page-title">WELCOME TO AGILE</h1>
+    <section class="center intro">
       <h2 id="about-agency">What we offer</h2>
       <p>
         Welcome to our agency page!
@@ -39,28 +36,28 @@
         designs that best suit their needs.
       </p>
     </section>
-      <section class="center gap-md width-med">
-        <!-- We could make this into tabs if there is time? - so you can flick between our profile -->
-        <h2 id="the-team">Meet the Team</h2>
-        <div>
-        <div class="tabcontent justify-space-evenly" id="adam">
-          <h3 >Adam</h3>
+    <section class="team-layout center gap-md width-med">
+      <!-- We could make this into tabs if there is time? - so you can flick between our profile -->
+      <h2 id="the-team">Meet the Team</h2>
+      <div class="owners">
+        <div class="tabcontent justify-space-evenly adam-background" id="adam">
+          <h3>Adam</h3>
           <p class="width-sm">
             I like to develop websites that are easy to navigate and access for
             users.
-              <p>SKILLS</p>
-            <ul>
-              <li>
-                HTML
-              </li>
-              <li>
-                CSS
-              </li>
-              <li>
-                Javascript
-              </li>
-            </ul>
-            </p>
+          <p>SKILLS</p>
+          <ul>
+            <li>
+              HTML
+            </li>
+            <li>
+              CSS
+            </li>
+            <li>
+              Javascript
+            </li>
+          </ul>
+          </p>
         </div>
         <div class="tabcontent justify-space-evenly hidden" id="juliette">
           <h3>Juliette</h3>
@@ -68,28 +65,30 @@
             I'm interested in making attractive, accessible designs that are
             inclusive and can be easily navigated by everyone.
 
-            <p>SKILLS</p>
-            <ul>
-              <li>
-                HTML
-              </li>
-              <li>
-                CSS
-              </li>
-              <li>
-                Javascript
-              </li>
-            </ul>
+          <p>SKILLS</p>
+          <ul>
+            <li>
+              HTML
+            </li>
+            <li>
+              CSS
+            </li>
+            <li>
+              Javascript
+            </li>
+          </ul>
           </p>
-           
-        </div> 
+
+        </div>
       </div>
-              <button class="tablink center" id="adam">Adam</button>
-              <button class="tablink center" id="juliette">Juliette</button>
+      <section class="tab-buttons">
+        <button class="tablink center width-med  adam">Adam</button>
+        <button class="tablink center  juliette">Juliette</button>
       </section>
-    <section class="center gap-xl width-sm">
-      <h2>Get in touch</h2>
-      <form action="" class="center width-sm">
+    </section>
+    <section class="center gap-xl width-med bottom">
+      <h2 id='contact-form'>Get in touch</h2>
+      <form action="" class="center width-med">
         <label for="fullname" class="gap-lg">Full Name:</label>
 
         <input type="text" id="fullname" value="">

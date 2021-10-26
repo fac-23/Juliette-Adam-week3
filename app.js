@@ -2,7 +2,7 @@ let form = document.querySelector("form");
 let fullName = document.querySelector("#fullname");
 let companyName = document.querySelector("#companyName");
 let email = document.querySelector("#email");
-
+console.log(window)
 form.addEventListener("submit", e => {
   e.preventDefault();
   let fullnameVal = fullName.value;
@@ -52,3 +52,28 @@ function changeTeamMember() {
   //show Bio with current index
   userBios[curIndex].classList.remove("hidden");
 }
+
+/*let adamBio = document.querySelector("#adam")
+let julietteBio = document.querySelector("#juliette")
+let adamTab = document.querySelector(".adam")
+let julietteTab = document.querySelector(".juliette")
+const currentlyHidden = julietteBio;
+function screenWidth() {
+  if (window.innerWidth <= 640) {
+    currentlyHidden.classList.add('hidden')
+    adamTab.classList.remove('hidden')
+    julietteTab.classList.remove('hidden')
+    if (adamBio.classList.contains('hidden')) {
+      console.log(currentlyHidden)
+      currentlyHidden = adamBio
+    }
+  } else {
+    //console.log(currentlyHidden)
+    currentlyHidden.classList.remove('hidden')
+    adamTab.classList.add('hidden')
+    julietteTab.classList.add('hidden')
+  }
+
+}
+
+window.addEventListener('resize', screenWidth)*/
