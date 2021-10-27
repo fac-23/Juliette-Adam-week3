@@ -2,22 +2,20 @@ let form = document.querySelector("form");
 let fullName = document.querySelector("#fullname");
 let companyName = document.querySelector("#companyName");
 let email = document.querySelector("#email");
-console.log(window)
+console.log(window);
 form.addEventListener("submit", e => {
   e.preventDefault();
   let fullnameVal = fullName.value;
   let companyNameVal = companyName.value;
   let emailVal = email.value;
   console.log(fullnameVal, companyNameVal, emailVal);
-  if ((fullnameVal === "" || companyNameVal === "" || emailVal === "")) {
+  if (fullnameVal === "" || companyNameVal === "" || emailVal === "") {
     alert("Please fill in required fields");
   }
 });
 
 //select tab buttons - test with console log
 const tablinks = Array.from(document.querySelectorAll(".tablink"));
-console.log(tablinks);
-tablinks.forEach(tablink => console.log("Class list is " + tablink.classList));
 
 //select the contents of all the tabs
 const userBios = Array.from(document.querySelectorAll(".tabcontent"));
